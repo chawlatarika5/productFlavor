@@ -17,6 +17,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors {
+        kevin {
+            applicationId "com.tarikachawla.kevin"
+            versionCode 1
+            versionName "1.0"
+        }
+        bob {
+            applicationId "com.tarikachawla.bob"
+            versionCode 1
+            versionName "1.0"
+        }
+    }
 }
 
 dependencies {
