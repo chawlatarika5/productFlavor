@@ -22,16 +22,16 @@ android {
             applicationId "com.tarikachawla.free"
             versionCode 1
             versionName "1.0"
-
+            buildConfigField "boolean", "glideLibrary", "true"
         }
         paid {
             applicationId "com.tarikachawla.paid"
             versionCode 1
             versionName "1.0"
+            buildConfigField "boolean", "glideLibrary", "false"
         }
     }
 }
-
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -42,5 +42,8 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:4.0.0-RC0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0-RC0'
+
 
 }

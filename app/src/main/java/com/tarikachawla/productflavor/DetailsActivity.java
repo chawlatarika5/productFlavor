@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 import com.tarikachawla.productflavor.R;
 
@@ -56,8 +57,14 @@ public class DetailsActivity extends AppCompatActivity {
 
     private void loadImage(ImageView imageView, String iconUrl) {
         Log.d(TAG, "Reached here");
-        Picasso.with(imageView.getContext())
-            .load(iconUrl)
-            .into(imageView);
+        if(BuildConfig.glideLibrary) {
+            Glide.with(imageView.getContext())
+                .load(iconUrl)
+                .into(imageView);
+        } else {
+            Picasso.with(imageView.getContext())
+                .load(iconUrl)
+                .into(imageView);
+        }
     }
 }
