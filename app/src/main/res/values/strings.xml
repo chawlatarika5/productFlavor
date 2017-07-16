@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">ProductFlavor</string>
+    <string name="app_name">DemoApp</string>
+    <!-- Main Activity -->
+    <string name="movieTitle">Despicable Me 3</string>
+    <string name="detailsButton">Details</string>
+    <string name="movieDescription">In the film, Gru teams up with his long lost twin brother Dru in order to defeat a
+        new enemy named Balthazar Bratt, a 1980s child actor who grows up to become a villain. Steve Carell, Miranda
+        Cosgrove and Dana Gaier reprise their roles of Gru, Margo and Edith from the first two films, and Julie Andrews
+        who returns as Marlena, Gru\'s mother from Despicable Me (2010). Kristen Wiig and Steve Coogan return from
+        Despicable Me 2 and Trey Parker and Jenny Slate join the cast.
+    </string>
+
+    <!-- DetailsActivity -->
+    <string name="KevinName">Kevin: The one that makes the rules</string>
+    <string name="BobName">Bob: Rules don\'t apply to me</string>
+    <string name="descText">Description</string>
 </resources>
